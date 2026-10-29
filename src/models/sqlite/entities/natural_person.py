@@ -1,7 +1,8 @@
 from sqlalchemy import Column, String, BIGINT
+from src.models.sqlite.settings.base import Base
 
-class NaturalPersonTable():
-    __tablename__ = "naturalperson"
+class NaturalPersonTable(Base):
+    __tablename__ = "natural_person"
 
     id = Column(BIGINT, primary_key=True)
     monthly_income = Column(BIGINT, nullable=False)
@@ -15,7 +16,7 @@ class NaturalPersonTable():
 
     def __repr__(self):
         return (
-            f"LegalPerson [name={self.full_name},"
+            f"NaturalPerson [name={self.full_name},"
             f"monthly_income={self.monthly_income},"
             f"age={self.age},"
             f"email={self.email},"
