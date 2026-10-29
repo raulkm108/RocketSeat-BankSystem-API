@@ -10,6 +10,9 @@ disable=
       C0304, # missing final newline
       R0903, # Too few public methods
       C0301, # line too long
+      R0913, # too many arguments
+      R0917, # too many positional arguments
+      C0303, # Traling whitespace
 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
