@@ -9,6 +9,7 @@ disable=
       E0015, # unrecognized-option
       C0304, # missing final newline
       R0903, # Too few public methods
+      C0301, # line too long
 
 
 # Analyse import fallback blocks. This can be used to support both Python 2 and
